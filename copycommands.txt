@@ -1,0 +1,2 @@
+find . -type f \( -name "*.tf" -o -name "*.tfx" -o -name "*.tfc" \) -exec zip files.zip {} +
+aws s3 cp /root/files.zip s3://nagu-terraform-training-bucket/
